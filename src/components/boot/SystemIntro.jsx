@@ -3,7 +3,7 @@ import gsap from 'gsap'
 import { IDENTITY } from '../../data/identity'
 import { usePrefersReducedMotion } from '../../lib/motion'
 
-export default function SystemIntro() {
+export default function SystemIntro({ onRunPipeline }) {
   const containerRef = useRef(null)
   const prefersReducedMotion = usePrefersReducedMotion()
 
@@ -74,7 +74,7 @@ export default function SystemIntro() {
               href="#about"
               className="rounded-md border border-hairline bg-graphite/90 px-6 py-3 font-mono text-sm text-foam transition-all duration-200 hover:border-signal hover:text-signal hover:scale-105 shadow-xl"
             >
-              [ RUN MODEL / EXPLORE ]
+              [ ABOUT / EXPLORE ]
             </a>
             <a
               href="#contact"
@@ -86,18 +86,20 @@ export default function SystemIntro() {
         </div>
       </div>
 
-      {/* Bouncing Scroll Cue (Emilian-Style) */}
+      {/* Pipeline Auto-Scroll Trigger (Bottom Center) */}
       <div className="z-10 flex w-full justify-center pb-4">
-        <a
-          href="#about"
-          className="group flex flex-col items-center gap-2 font-mono text-xs tracking-widest text-mist/70 transition-colors hover:text-signal"
+        <button
+          onClick={onRunPipeline}
+          className="group flex flex-col items-center gap-2 font-mono text-xs tracking-widest text-mist/70 transition-colors hover:text-signal cursor-pointer bg-transparent border-none outline-none"
+          aria-label="Run pipeline — auto-scroll through all sections"
         >
           <span>RUN PIPELINE</span>
           <div className="scroll-mouse flex h-7 w-4 items-start justify-center rounded-full border border-mist/40 p-1 group-hover:border-signal">
             <div className="h-1.5 w-1 rounded-full bg-signal"></div>
           </div>
-        </a>
+        </button>
       </div>
     </section>
   )
 }
+

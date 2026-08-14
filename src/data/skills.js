@@ -1,0 +1,50 @@
+export const SKILL_LAYERS = [
+  {
+    id: 'layer-1',
+    label: 'Layer 1: Core Programming',
+    hint: 'input languages & paradigms',
+    items: ['Python', 'Java', 'C','SQL', 'Web Development'],
+  },
+  {
+    id: 'layer-2',
+    label: 'Layer 2: Machine Learning',
+    hint: 'data science & modeling',
+    items: [
+      'Pandas',
+      'NumPy',
+      'Scikit-learn',
+      'Statistics',
+      'Feature Engineering',
+      'Matplotlib',
+      'Seaborn',
+    ],
+  },
+  {
+    id: 'layer-3',
+    label: 'Layer 3: AI & Intelligence Systems',
+    hint: 'Agents & LLMs',
+    items: [
+      'RAG',
+      'Generative AI',
+      'FastMCP',
+      'MCP Architecture',
+      'Agentic Systems',
+    ],
+  },
+  {
+    id: 'layer-4',
+    label: 'Layer 4: Full-Stack Engineering',
+    hint: 'deployment, containers & APIs',
+    items: [
+      'React',
+      'Django',
+      'FastAPI',
+      'Docker',
+      'PostgreSQL',
+      'MySQL',
+      'MongoDB',
+      'SQLite',
+      'Git & GitHub',
+    ],
+  },
+]

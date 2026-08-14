@@ -3,6 +3,7 @@ import Lenis from 'lenis'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { usePrefersReducedMotion } from '../../lib/motion'
+import { LenisContext } from '../../lib/LenisContext'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -19,6 +20,7 @@ gsap.registerPlugin(ScrollTrigger)
  */
 export default function SmoothScroll({ children }) {
   const rafId = useRef(null)
+  const lenisRef = useRef(null)
   const prefersReducedMotion = usePrefersReducedMotion()
 
   useEffect(() => {
@@ -35,6 +37,8 @@ export default function SmoothScroll({ children }) {
       smoothWheel: true,
     })
 
+    lenisRef.current = lenis
+
     lenis.on('scroll', ScrollTrigger.update)
 
     function raf(time) {
@@ -49,9 +53,15 @@ export default function SmoothScroll({ children }) {
 
     return () => {
       if (rafId.current) cancelAnimationFrame(rafId.current)
+      lenisRef.current = null
       lenis.destroy()
     }
   }, [prefersReducedMotion])
 
-  return children
+  return (
+    <LenisContext.Provider value={lenisRef}>
+      {children}
+    </LenisContext.Provider>
+  )
 }
+
