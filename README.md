@@ -7,6 +7,9 @@
 </p>
 
 <p align="center">
+  <a href="https://sachin-rawal091.github.io/Who-am-I-/">
+    <img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Portfolio-F2914B?style=for-the-badge&logoColor=white" alt="Live Demo" />
+  </a>
   <a href="https://github.com/Sachin-Rawal091/Who-am-I-">
     <img src="https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 19" />
   </a>
@@ -22,12 +25,10 @@
   <a href="https://github.com/Sachin-Rawal091/Who-am-I-">
     <img src="https://img.shields.io/badge/Vite-8.2-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
   </a>
-  <a href="https://github.com/Sachin-Rawal091/Who-am-I-">
-    <img src="https://img.shields.io/badge/License-MIT-F2914B?style=for-the-badge" alt="MIT License" />
-  </a>
 </p>
 
 <p align="center">
+  <a href="https://sachin-rawal091.github.io/Who-am-I-/"><strong>🚀 Live Demo</strong></a> •
   <a href="#-key-features"><strong>Explore Features</strong></a> •
   <a href="#-3d-pipeline-architecture"><strong>3D Architecture</strong></a> •
   <a href="#-quick-start"><strong>Quick Start</strong></a> •
