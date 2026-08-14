@@ -61,7 +61,7 @@ export default function SystemIntro() {
             </h1>
             <p className="mt-3 font-mono text-base text-mist sm:text-lg lg:text-xl">
               AI & Machine Learning Engineer +{' '}
-              <span className="text-gradient-shift font-bold">Vibecoder</span>
+              <span className="text-gradient-shift font-bold">Web Developer</span>
             </p>
           </div>
 
@@ -83,11 +83,6 @@ export default function SystemIntro() {
               [ DEPLOY / CONTACT ]
             </a>
           </div>
-        </div>
-
-        {/* Vertical Pipeline Laser Line (Lannino-Style) */}
-        <div data-reveal className="mt-8 ml-6 flex flex-col items-start gap-2">
-          <div className="h-16 w-px bg-gradient-to-b from-signal/70 via-signal/20 to-transparent"></div>
         </div>
       </div>
 
