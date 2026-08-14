@@ -7,28 +7,28 @@
 </p>
 
 <p align="center">
-  <a href="https://sachin-rawal091.github.io/Who-am-I-/">
+  <a href="https://sachin-rawal091.github.io/Who-am-I/">
     <img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Portfolio-F2914B?style=for-the-badge&logoColor=white" alt="Live Demo" />
   </a>
-  <a href="https://github.com/Sachin-Rawal091/Who-am-I-">
+  <a href="https://github.com/Sachin-Rawal091/Who-am-I">
     <img src="https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 19" />
   </a>
-  <a href="https://github.com/Sachin-Rawal091/Who-am-I-">
+  <a href="https://github.com/Sachin-Rawal091/Who-am-I">
     <img src="https://img.shields.io/badge/Three.js-r185-000000?style=for-the-badge&logo=threedotjs&logoColor=white" alt="Three.js" />
   </a>
-  <a href="https://github.com/Sachin-Rawal091/Who-am-I-">
+  <a href="https://github.com/Sachin-Rawal091/Who-am-I">
     <img src="https://img.shields.io/badge/GSAP-3.15-88CE02?style=for-the-badge&logo=greensock&logoColor=black" alt="GSAP" />
   </a>
-  <a href="https://github.com/Sachin-Rawal091/Who-am-I-">
+  <a href="https://github.com/Sachin-Rawal091/Who-am-I">
     <img src="https://img.shields.io/badge/Tailwind_CSS-v4.3-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS v4" />
   </a>
-  <a href="https://github.com/Sachin-Rawal091/Who-am-I-">
+  <a href="https://github.com/Sachin-Rawal091/Who-am-I">
     <img src="https://img.shields.io/badge/Vite-8.2-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://sachin-rawal091.github.io/Who-am-I-/"><strong>🚀 Live Demo</strong></a> •
+  <a href="https://sachin-rawal091.github.io/Who-am-I/"><strong>🚀 Live Demo</strong></a> •
   <a href="#-key-features"><strong>Explore Features</strong></a> •
   <a href="#-3d-pipeline-architecture"><strong>3D Architecture</strong></a> •
   <a href="#-quick-start"><strong>Quick Start</strong></a> •
