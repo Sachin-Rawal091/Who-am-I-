@@ -81,7 +81,7 @@ export default function Projects() {
         </div>
 
         {/* 3D Swipe Stage Container */}
-        <div className="relative mt-6 mb-6 flex min-h-[440px] items-center justify-center sm:mt-8 sm:mb-8 sm:min-h-[420px] lg:min-h-[400px]">
+        <div className="relative mt-6 mb-6 flex min-h-[520px] items-center justify-center sm:mt-8 sm:mb-8 sm:min-h-[470px] lg:min-h-[430px]">
           {/* Background Ambient Glow */}
           <div className="pointer-events-none absolute left-1/2 top-1/2 h-72 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-signal/5 blur-3xl" />
 
