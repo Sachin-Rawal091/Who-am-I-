@@ -14,17 +14,3 @@ export const IDENTITY = {
   achievements: ['Smart India Hackathon', 'RYB × PGVF Entrepreneurship Ideathon'],
 }
 
-export const MODEL_CARD = {
-  model_id: 'RAWAL.AI',
-  role: 'AI Engineer',
-  primary_stack: 'Python · ML · React · Django',
-  specialization: 'AI Systems · Web Development · Automation',
-  total_projects: '04',
-  experience: '02+ Years',
-  status: '● AVAILABLE FOR INTERNSHIPS & CONTRACTS',
-  metrics: {
-    accuracy: '98.4%',
-    latency: '42ms',
-    uptime: '99.9%',
-  },
-}

@@ -7,20 +7,7 @@ import DataParticles from './DataParticles'
 
 const SIGNAL = '#f2914b'
 
-/**
- * Calculates section base rotation angle (in radians) based on scroll progress p (0 to 1):
- * - Boot (0.0): 0 rad
- * - Data (0.18): 0.44 rad (25°)
- * - Features (0.38): 1.13 rad (65°)
- * - Training (0.58): 2.09 rad (120°)
- * - Projects (0.76): 3.49 rad (200°)
- * - Model Card (0.88): 4.71 rad (270°)
- * - Deploy (1.0): 6.28 rad (360°)
- */
-function getSectionBaseRotation(p) {
-  const targetAngle = p * Math.PI * 2
-  return targetAngle
-}
+const getSectionBaseRotation = (p) => p * Math.PI * 2
 
 export default function AIWorld({
   stageProgress = 0,

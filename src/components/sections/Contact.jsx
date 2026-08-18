@@ -4,6 +4,16 @@ import GlassPanel from '../ui/GlassPanel'
 import DeployButton from '../ui/DeployButton'
 import { IDENTITY } from '../../data/identity'
 
+function createMailtoUri(data) {
+  const mailSubject = encodeURIComponent(
+    data.subject?.trim() || `Portfolio Contact from ${data.name || 'Visitor'}`
+  )
+  const mailBody = encodeURIComponent(
+    `Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`
+  )
+  return `mailto:${IDENTITY.email}?subject=${mailSubject}&body=${mailBody}`
+}
+
 export default function Contact({ onDeployPulse }) {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' })
   const [status, setStatus] = useState('idle') // 'idle' | 'loading' | 'success' | 'error'
@@ -27,15 +37,8 @@ export default function Contact({ onDeployPulse }) {
       setStatus('loading')
       setStatusMsg('Opening direct email client fallback...')
 
-      const mailSubject = encodeURIComponent(
-        formData.subject.trim() || `Portfolio Contact from ${formData.name || 'Visitor'}`
-      )
-      const mailBody = encodeURIComponent(
-        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-      )
-
       setTimeout(() => {
-        window.location.href = `mailto:${IDENTITY.email}?subject=${mailSubject}&body=${mailBody}`
+        window.location.href = createMailtoUri(formData)
         setStatus('idle')
         setStatusMsg('')
       }, 500)
@@ -72,13 +75,7 @@ export default function Contact({ onDeployPulse }) {
       setStatusMsg('⚠️ Direct transmission failed. Opening mail client fallback...')
 
       setTimeout(() => {
-        const mailSubject = encodeURIComponent(
-          formData.subject.trim() || `Portfolio Contact from ${formData.name}`
-        )
-        const mailBody = encodeURIComponent(
-          `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-        )
-        window.location.href = `mailto:${IDENTITY.email}?subject=${mailSubject}&body=${mailBody}`
+        window.location.href = createMailtoUri(formData)
       }, 1000)
     }
   }
